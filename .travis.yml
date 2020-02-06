@@ -21,8 +21,11 @@ before_install:
 script:
   - go test -v -covermode=count -coverprofile=coverage.out
   - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci
+  - tree /home/travis/gopath/src/github.com/
   - ln -s /home/travis/gopath/src/github.com/zhogov /home/travis/gopath/src/github.com/ssh-vault
   - ls /home/travis/gopath/src/github.com/ssh-vault/
+  - ls /home/travis/gopath/src/github.com/zhogov/
+  - ls /home/travis/gopath/src/github.com/
   - make build
   - make build-linux
 
