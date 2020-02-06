@@ -25,6 +25,7 @@ script:
   - go test -v -covermode=count -coverprofile=coverage.out
   - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci
   - ln -s /home/travis/gopath/src/github.com/zhogov /home/travis/gopath/src/github.com/ssh-vault
+  - ls /home/travis/gopath/src/github.com/ssh-vault/
   - make build
   - make build-linux
 
