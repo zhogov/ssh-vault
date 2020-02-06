@@ -19,8 +19,12 @@ Example:
 
     $ echo "secret" | ssh-vault -u <github.com/user> create
 
+## Installation
 
-## Compile from source
+### Mac OS
+    brew install ssh-vault
+
+### Compile from source
 
 Setup go environment https://golang.org/doc/install
 
